@@ -4,7 +4,7 @@
  *    expend:true,  boolean 是否动态处理src和desc之间的映射
  *    cwd:'path',  源文件路径
  *    src:'filename',  对应文件名 支持array 如['file1.css','file2.css']
- *	  desc:'exportFile',	导出文件夹
+ *    desc:'exportFile',	导出文件夹
  *    ext:'fileFormate',	导出文件格式，如.css .min.css
  *    extDot:'first',		从何处开始执行,如index.pak.html 填写first时以上demo执行出的是index.html  value:first;last
  * }
@@ -50,7 +50,7 @@ module.exports=function(grunt){
       },
       uglify: {
         target:{
-		  options:{
+	   options:{
               mangle: true, //混淆变量名
               comments: true //false（删除全部注释），some（保留@preserve @license @cc_on等注释）
           },
@@ -66,12 +66,12 @@ module.exports=function(grunt){
               // }
           }]
         },
-		areaTest:{
-			options:{
-			   mangle: true, //混淆变量名
-              comments: 'false' //false（删除全部注释），some（保留@preserve @license @cc_on等注释）
-			},
-			files:[{
+        areaTest:{
+	  options:{
+	      	mangle: true, //混淆变量名
+              	comments: 'false' //false（删除全部注释），some（保留@preserve @license @cc_on等注释）
+	      },
+	      files:[{
               expand:true,
               cwd:'turntable',
               src:['*.js'],
